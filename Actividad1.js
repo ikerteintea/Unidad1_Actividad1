@@ -39,10 +39,10 @@ function buscarPatron(texto, patron) {
 }
 
 
-function main() {
+function button() {
     
-    let texto = "000111101000ABCHO";
-    let patronesABuscar = ["00", "101", "ABC", "HO"];
+    let texto = document.getElementById("text").value;
+    let patronesABuscar = [document.getElementById("pattern1").value, document.getElementById("pattern2").value, document.getElementById("pattern3").value];
     let i;
 
     // Total de coincidencias de todos los patrones
@@ -63,5 +63,5 @@ function main() {
 }
 
 // Llamamos a la función principal, main
-main();
+//main();
 
